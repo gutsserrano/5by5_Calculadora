@@ -1,4 +1,4 @@
-﻿double n1, n2;
+﻿double n1 = 0, n2 = 0, n3 = 0 , n4 = 0;
 
 double adc;
 double sub;
@@ -20,9 +20,31 @@ do
 
         if (n2 == 0)
         {
-            Console.WriteLine("**N2 não pode ser 0 pois é impossível dividir por 0**\n");
+            Console.WriteLine("\n**N2 não pode ser 0 pois é impossível dividir por 0**\n");
         }
     } while (n2 == 0);
+
+    do
+    {
+        Console.WriteLine("Digite o terceiro valor: ");
+        n3 = double.Parse(Console.ReadLine());
+
+        if (n3 == 0)
+        {
+            Console.WriteLine("\n**N3 não pode ser 0 pois é impossível dividir por 0**\n");
+        }
+    } while (n3 == 0);
+
+    do
+    {
+        Console.WriteLine("Digite o quarto valor: ");
+        n4 = double.Parse(Console.ReadLine());
+
+        if (n4 == 0)
+        {
+            Console.WriteLine("\n**N4 não pode ser 0 pois é impossível dividir por 0**\n");
+        }
+    } while (n4 == 0);
 
     do
     {
@@ -37,23 +59,23 @@ do
 
     if (opcao == 1)
     {
-        adc = n1 + n2;
-        Console.WriteLine($"\n{n1} + {n2} = {adc}");
+        adc = n1 + n2 + n3 + n4;
+        Console.WriteLine($"\n{n1} + {n2} + {n3} + {n4} = {adc}");
     }
     else if (opcao == 2)
     {
-        sub = n1 - n2;
-        Console.WriteLine($"\n{n1} - {n2} = {sub}");
+        sub = n1 - n2 - n3 - n4;
+        Console.WriteLine($"\n{n1} - {n2} - {n3} - {n4} = {sub}");
     }
     else if (opcao == 3)
     {
-        mult = n1 * n2;
-        Console.WriteLine($"\n{n1} * {n2} = {mult}");
+        mult = n1 * n2 * n3 * n4;
+        Console.WriteLine($"\n{n1} * {n2} * {n3} * {n4} = {mult}");
     }
     else
     {
-        div = n1 / n2;
-        Console.WriteLine($"\n{n1} / {n2} = {div}\n");
+        div = n1 / n2 / n3 / n4;
+        Console.WriteLine($"\n{n1} / {n2} / {n3} / {n4} = {div}\n");
     }
 
     do
