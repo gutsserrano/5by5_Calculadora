@@ -1,9 +1,6 @@
 ﻿double n1 = 0, n2 = 0, n3 = 0 , n4 = 0;
 
-double adc;
-double sub;
-double mult;
-double div;
+double resultado;
 
 int opcao = 0;
 int continuar = 0;
@@ -59,23 +56,23 @@ do
 
     if (opcao == 1)
     {
-        adc = n1 + n2 + n3 + n4;
-        Console.WriteLine($"\n{n1} + {n2} + {n3} + {n4} = {adc}");
+        resultado = n1 + n2 + n3 + n4;
+        Console.WriteLine($"\n{n1} + {n2} + {n3} + {n4} = {resultado}");
     }
     else if (opcao == 2)
     {
-        sub = n1 - n2 - n3 - n4;
-        Console.WriteLine($"\n{n1} - {n2} - {n3} - {n4} = {sub}");
+        resultado = n1 - n2 - n3 - n4;
+        Console.WriteLine($"\n{n1} - {n2} - {n3} - {n4} = {resultado}");
     }
     else if (opcao == 3)
     {
-        mult = n1 * n2 * n3 * n4;
-        Console.WriteLine($"\n{n1} * {n2} * {n3} * {n4} = {mult}");
+        resultado = n1 * n2 * n3 * n4;
+        Console.WriteLine($"\n{n1} * {n2} * {n3} * {n4} = {resultado}");
     }
     else
     {
-        div = n1 / n2 / n3 / n4;
-        Console.WriteLine($"\n{n1} / {n2} / {n3} / {n4} = {div}\n");
+        resultado = n1 / n2 / n3 / n4;
+        Console.WriteLine($"\n{n1} / {n2} / {n3} / {n4} = {resultado}\n");
     }
 
     do
