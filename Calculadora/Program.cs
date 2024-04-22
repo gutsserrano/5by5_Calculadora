@@ -54,25 +54,27 @@ do
         opcao = int.Parse(Console.ReadLine());
     } while (opcao < 1 || opcao > 4);
 
-    if (opcao == 1)
+    switch (opcao)
     {
-        resultado = n1 + n2 + n3 + n4;
-        Console.WriteLine($"\n{n1} + {n2} + {n3} + {n4} = {resultado}");
-    }
-    else if (opcao == 2)
-    {
-        resultado = n1 - n2 - n3 - n4;
-        Console.WriteLine($"\n{n1} - {n2} - {n3} - {n4} = {resultado}");
-    }
-    else if (opcao == 3)
-    {
-        resultado = n1 * n2 * n3 * n4;
-        Console.WriteLine($"\n{n1} * {n2} * {n3} * {n4} = {resultado}");
-    }
-    else
-    {
-        resultado = n1 / n2 / n3 / n4;
-        Console.WriteLine($"\n{n1} / {n2} / {n3} / {n4} = {resultado}\n");
+        case 1:
+            resultado = n1 + n2 + n3 + n4;
+            Console.WriteLine($"\n{n1} + {n2} + {n3} + {n4} = {resultado}");
+            break;
+        case 2:
+            resultado = n1 - n2 - n3 - n4;
+            Console.WriteLine($"\n{n1} - {n2} - {n3} - {n4} = {resultado}");
+            break;
+        case 3:
+            resultado = n1 * n2 * n3 * n4;
+            Console.WriteLine($"\n{n1} * {n2} * {n3} * {n4} = {resultado}");
+            break;
+        case 4:
+            resultado = n1 / n2 / n3 / n4;
+            Console.WriteLine($"\n{n1} / {n2} / {n3} / {n4} = {resultado}\n");
+            break;
+        default:
+            Console.WriteLine("\nOpção inválida!\n");
+            break;
     }
 
     do
